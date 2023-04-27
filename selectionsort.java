@@ -7,9 +7,10 @@ public class selectionsort {
             int largest = 0;
             for (int i = 1; i <= lastUnsortedIndex; i++) {
                 if (intArray[i] > intArray[largest]) {
+                    largest=i;
                 }
             }
-            
+
             swap(intArray, largest, lastUnsortedIndex);
 
         }
